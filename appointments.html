@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointments - UniManage AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            UniManage <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="health.html">Health</a>
+            <a href="appointments.html" class="active">Appointments</a>
+            <a href="alerts.html">Alerts</a>
+        </div>
+
+        <div class="profile">
+            <div class="profile-avatar">K</div>
+
+            <div>
+                <strong>Keerthana</strong>
+                <small>BCA Student</small>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="section" style="padding-top:70px;">
+
+            <p class="eyebrow">HEALTH SERVICES</p>
+
+            <h1 style="font-size:48px; margin-bottom:15px;">
+                My Appointments
+            </h1>
+
+            <p style="color:#a9b1c7; margin-bottom:35px;">
+                Manage your health appointments and consultations.
+            </p>
+
+
+            <!-- CREATE APPOINTMENT -->
+            <div class="card">
+
+                <h2>📅 Create Appointment</h2>
+
+                <p style="color:#a9b1c7; margin-top:10px;">
+                    Enter your appointment details below.
+                </p>
+
+                <form id="appointmentForm"
+                      style="margin-top:25px;">
+
+                    <!-- Doctor -->
+                    <label>Doctor Name</label>
+
+                    <input
+                        type="text"
+                        id="doctorName"
+                        placeholder="Enter doctor name"
+                        required
+                        style="width:100%;
+                               padding:14px;
+                               margin:8px 0 18px;
+                               border-radius:10px;
+                               border:1px solid rgba(255,255,255,.15);
+                               background:#11172d;
+                               color:white;">
+
+
+                    <!-- Date -->
+                    <label>Appointment Date</label>
+
+                    <input
+                        type="date"
+                        id="appointmentDate"
+                        required
+                        style="width:100%;
+                               padding:14px;
+                               margin:8px 0 18px;
+                               border-radius:10px;
+                               border:1px solid rgba(255,255,255,.15);
+                               background:#11172d;
+                               color:white;">
+
+
+                    <!-- Time -->
+                    <label>Appointment Time</label>
+
+                    <input
+                        type="time"
+                        id="appointmentTime"
+                        required
+                        style="width:100%;
+                               padding:14px;
+                               margin:8px 0 18px;
+                               border-radius:10px;
+                               border:1px solid rgba(255,255,255,.15);
+                               background:#11172d;
+                               color:white;">
+
+
+                    <!-- Reason -->
+                    <label>Reason</label>
+
+                    <input
+                        type="text"
+                        id="reason"
+                        placeholder="Enter appointment reason"
+                        required
+                        style="width:100%;
+                               padding:14px;
+                               margin:8px 0 22px;
+                               border-radius:10px;
+                               border:1px solid rgba(255,255,255,.15);
+                               background:#11172d;
+                               color:white;">
+
+
+                    <!-- BOOK -->
+                    <button
+                        type="submit"
+                        class="btn">
+
+                        📅 Book Appointment
+
+                    </button>
+
+                </form>
+
+                <!-- RESULT MESSAGE -->
+                <p id="appointmentMessage"
+                   style="margin-top:20px;">
+                </p>
+
+            </div>
+
+
+            <!-- EXISTING APPOINTMENTS -->
+
+            <div style="margin-top:40px;">
+
+                <p class="eyebrow">
+                    UPCOMING APPOINTMENTS
+                </p>
+
+                <h2 style="margin-bottom:20px;">
+                    Your Appointments
+                </h2>
+
+
+                <div
+                    id="appointmentList"
+                    class="appointment-list">
+
+                    <div class="appointment-card">
+
+                        <div class="appointment-icon">
+                            🩺
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                General Health Check
+                            </h3>
+
+                            <p>
+                                Dr. HealthCare
+                            </p>
+
+                            <small>
+                                Tomorrow • 10:30 AM
+                            </small>
+
+                        </div>
+
+                        <span class="status">
+                            Booked
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <strong>UniManage AI</strong>
+
+        <p>
+            Smart Digital Health & Wellness Platform
+        </p>
+
+        <small>
+            © 2026 UniManage AI
+        </small>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="appointment.js"></script>
+
+</body>
+
+</html>

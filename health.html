@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniManage AI - Health Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        UniManage <span>AI</span>
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="wellness.html" class="active">
+            Wellness
+        </a>
+
+        <a href="health.html">
+            Profile
+        </a>
+
+        <a href="appointments.html">
+            Appointments
+        </a>
+
+        <a href="alerts.html">
+            Alerts
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="container">
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="dashboard-welcome">
+
+        <div>
+
+            <p class="small-label">
+                HEALTH & WELLNESS
+            </p>
+
+            <h1>
+                Health Profile ❤️
+            </h1>
+
+            <p>
+                Manage your personal health information
+                securely in UniManage AI.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-user">
+
+            <div class="user-avatar">
+                K
+            </div>
+
+            <div>
+
+                <strong>
+                    Keerthana Y
+                </strong>
+
+                <span>
+                    BCA Student
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WELLNESS DASHBOARD BUTTON
+    ========================== -->
+
+    <section class="section">
+
+        <div class="ai-card">
+
+            <div class="ai-icon">
+                📊
+            </div>
+
+            <div>
+
+                <p class="small-label">
+                    HEALTH OVERVIEW
+                </p>
+
+                <h2>
+                    Wellness Dashboard
+                </h2>
+
+                <p>
+                    View your wellness status,
+                    appointments, alerts and AI insights
+                    from one place.
+                </p>
+
+                <br>
+
+                <a href="wellness.html" class="btn">
+                    Open Wellness Dashboard →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HEALTH PROFILE FORM
+    ========================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-label">
+                PERSONAL HEALTH
+            </p>
+
+            <h2>
+                My Health Information
+            </h2>
+
+            <p>
+                Keep your health information updated.
+            </p>
+
+        </div>
+
+
+        <div class="quick-card">
+
+
+            <form id="healthForm">
+
+
+                <!-- STUDENT ID -->
+
+                <div class="input-group">
+
+                    <label for="studentId">
+                        Student ID
+                    </label>
+
+                    <input
+                        type="number"
+                        id="studentId"
+                        value="1"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- BLOOD GROUP -->
+
+                <div class="input-group">
+
+                    <label for="bloodGroup">
+                        Blood Group
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bloodGroup"
+                        placeholder="Example: O+"
+                    >
+
+                </div>
+
+
+                <!-- EMERGENCY CONTACT -->
+
+                <div class="input-group">
+
+                    <label for="emergencyContact">
+                        Emergency Contact
+                    </label>
+
+                    <input
+                        type="text"
+                        id="emergencyContact"
+                        placeholder="Enter emergency contact"
+                    >
+
+                </div>
+
+
+                <!-- ALLERGIES -->
+
+                <div class="input-group">
+
+                    <label for="allergies">
+                        Allergies
+                    </label>
+
+                    <input
+                        type="text"
+                        id="allergies"
+                        placeholder="Enter allergies"
+                    >
+
+                </div>
+
+
+                <!-- MEDICAL NOTES -->
+
+                <div class="input-group">
+
+                    <label for="medicalNotes">
+                        Medical Notes
+                    </label>
+
+                    <textarea
+                        id="medicalNotes"
+                        rows="5"
+                        placeholder="Enter medical notes"
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Save Health Profile
+                </button>
+
+
+                <p
+                    id="healthMessage"
+                    class="login-message"
+                ></p>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUICK ACTIONS
+    ========================== -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-label">
+                HEALTH SERVICES
+            </p>
+
+            <h2>
+                Quick Actions
+            </h2>
+
+        </div>
+
+
+        <div class="module-grid">
+
+
+            <!-- WELLNESS -->
+
+            <a
+                href="wellness.html"
+                class="quick-card module-link"
+            >
+
+                <div class="quick-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Wellness Dashboard
+                </h3>
+
+                <p>
+                    View your complete wellness
+                    overview and AI insights.
+                </p>
+
+                <span class="module-arrow">
+                    Open Dashboard →
+                </span>
+
+            </a>
+
+
+            <!-- APPOINTMENTS -->
+
+            <a
+                href="appointments.html"
+                class="quick-card module-link"
+            >
+
+                <div class="quick-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Appointments
+                </h3>
+
+                <p>
+                    Book and manage your health
+                    appointments.
+                </p>
+
+                <span class="module-arrow">
+                    Manage Appointments →
+                </span>
+
+            </a>
+
+
+            <!-- ALERTS -->
+
+            <a
+                href="alerts.html"
+                class="quick-card module-link"
+            >
+
+                <div class="quick-icon">
+                    🔔
+                </div>
+
+                <h3>
+                    Health Alerts
+                </h3>
+
+                <p>
+                    View health notifications,
+                    reminders and AI insights.
+                </p>
+
+                <span class="module-arrow">
+                    View Alerts →
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BACK TO DASHBOARD
+    ========================== -->
+
+    <section class="section">
+
+        <div style="text-align:center;">
+
+            <a
+                href="dashboard.html"
+                class="btn"
+            >
+                ← Back to Main Dashboard
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 UniManage AI
+    </p>
+
+    <p>
+        AI-Based Health & Wellness Management
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+const HEALTH_API =
+    "http://localhost:8080/api/health-profiles";
+
+
+/* =========================
+   LOAD PROFILE
+========================= */
+
+async function loadHealthProfile() {
+
+    const studentId =
+        document.getElementById("studentId").value;
+
+
+    try {
+
+        const response = await fetch(
+            HEALTH_API +
+            "/student/" +
+            studentId
+        );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Profile not found"
+            );
+
+        }
+
+
+        const profiles =
+            await response.json();
+
+
+        if (
+            profiles &&
+            profiles.length > 0
+        ) {
+
+            const profile =
+                profiles[0];
+
+
+            document.getElementById(
+                "bloodGroup"
+            ).value =
+                profile.bloodGroup || "";
+
+
+            document.getElementById(
+                "emergencyContact"
+            ).value =
+                profile.emergencyContact || "";
+
+
+            document.getElementById(
+                "allergies"
+            ).value =
+                profile.allergies || "";
+
+
+            document.getElementById(
+                "medicalNotes"
+            ).value =
+                profile.medicalNotes || "";
+
+        }
+
+    }
+
+    catch (error) {
+
+        console.log(
+            "Profile loading:",
+            error
+        );
+
+    }
+
+}
+
+
+/* =========================
+   SAVE PROFILE
+========================= */
+
+document
+    .getElementById("healthForm")
+    .addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            const studentId =
+                Number(
+                    document.getElementById(
+                        "studentId"
+                    ).value
+                );
+
+
+            const profileData = {
+
+                studentId:
+                    studentId,
+
+                bloodGroup:
+                    document.getElementById(
+                        "bloodGroup"
+                    ).value,
+
+                emergencyContact:
+                    document.getElementById(
+                        "emergencyContact"
+                    ).value,
+
+                allergies:
+                    document.getElementById(
+                        "allergies"
+                    ).value,
+
+                medicalNotes:
+                    document.getElementById(
+                        "medicalNotes"
+                    ).value
+
+            };
+
+
+            const message =
+                document.getElementById(
+                    "healthMessage"
+                );
+
+
+            try {
+
+                /*
+                 * Check existing profile
+                 */
+
+                const checkResponse =
+                    await fetch(
+                        HEALTH_API +
+                        "/student/" +
+                        studentId
+                    );
+
+
+                const existingProfiles =
+                    checkResponse.ok
+                        ? await checkResponse.json()
+                        : [];
+
+
+                let response;
+
+
+                /*
+                 * UPDATE
+                 */
+
+                if (
+                    existingProfiles.length > 0
+                ) {
+
+                    const profileId =
+                        existingProfiles[0]
+                            .healthId;
+
+
+                    response =
+                        await fetch(
+                            HEALTH_API +
+                            "/" +
+                            profileId,
+                            {
+                                method: "PUT",
+
+                                headers: {
+                                    "Content-Type":
+                                        "application/json"
+                                },
+
+                                body:
+                                    JSON.stringify(
+                                        profileData
+                                    )
+                            }
+                        );
+
+                }
+
+
+                /*
+                 * CREATE
+                 */
+
+                else {
+
+                    response =
+                        await fetch(
+                            HEALTH_API,
+                            {
+                                method: "POST",
+
+                                headers: {
+                                    "Content-Type":
+                                        "application/json"
+                                },
+
+                                body:
+                                    JSON.stringify(
+                                        profileData
+                                    )
+                            }
+                        );
+
+                }
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to save profile"
+                    );
+
+                }
+
+
+                message.textContent =
+                    "✓ Health profile saved successfully!";
+
+                message.className =
+                    "login-message success";
+
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Profile error:",
+                    error
+                );
+
+
+                message.textContent =
+                    "✕ Unable to connect with backend.";
+
+                message.className =
+                    "login-message error";
+
+            }
+
+        }
+    );
+
+
+/* =========================
+   PAGE LOAD
+========================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        loadHealthProfile();
+
+    }
+);
+
+</script>
+
+
+</body>
+<script src="health.js"></script>
+
+</html>
