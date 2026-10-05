@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniManage AI - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        UniManage <span>AI</span>
+    </div>
+
+    <nav>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="index.html">Health</a>
+        <a href="home.html">Home</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <!-- WELCOME -->
+    <section class="dashboard-welcome">
+
+        <div>
+
+            <p class="small-label">
+                UNIMANAGE AI DASHBOARD
+            </p>
+
+            <h1>
+                Welcome Back, Keerthana! 👋
+            </h1>
+
+            <p>
+                Manage your academic, campus, health and
+                learning activities from one unified platform.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-user">
+
+            <div class="user-avatar">
+                K
+            </div>
+
+            <div>
+                <strong>Keerthana Y</strong>
+                <span>BCA Student</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK STATS -->
+    <section class="dashboard-stats">
+
+        <div class="stat-card">
+            <div class="stat-icon">👨‍🎓</div>
+
+            <div>
+                <strong>Student</strong>
+                <span>Intelligence</span>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">🏫</div>
+
+            <div>
+                <strong>Campus</strong>
+                <span>Facilities</span>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">❤️</div>
+
+            <div>
+                <strong>Health</strong>
+                <span>Wellness</span>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon">📚</div>
+
+            <div>
+                <strong>Library</strong>
+                <span>Learning</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FIVE MODULES -->
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-label">
+                UNIMANAGE AI MODULES
+            </p>
+
+            <h2>
+                Explore Your Modules
+            </h2>
+
+            <p>
+                Select a module to continue.
+            </p>
+
+        </div>
+
+
+        <div class="module-grid">
+
+
+            <!-- MODULE 1 -->
+            <a href="module.html?module=student"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    👨‍🎓
+                </div>
+
+                <h3>
+                    Smart Student Intelligence
+                </h3>
+
+                <p>
+                    Student profile, attendance, marks
+                    and AI academic insights.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 2 -->
+            <a href="module.html?module=campus"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    Smart Campus & Facility
+                </h3>
+
+                <p>
+                    Rooms, equipment, maintenance
+                    and facility availability.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 3 -->
+            <a href="index.html"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Health & Wellness
+                </h3>
+
+                <p>
+                    Health profile, appointments
+                    and wellness alerts.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 4 -->
+            <a href="module.html?module=library"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    📚
+                </div>
+
+                <h3>
+                    AI Library & Learning
+                </h3>
+
+                <p>
+                    Books, issue/return and
+                    AI learning recommendations.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 5 -->
+            <a href="module.html?module=ai"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Alert & Decision Dashboard
+                </h3>
+
+                <p>
+                    Notifications, analytics
+                    and AI-powered insights.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- AI SECTION -->
+    <section class="section">
+
+        <div class="ai-card">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <p class="small-label">
+                    AI ASSISTANT
+                </p>
+
+                <h2>
+                    Intelligent Campus Insights
+                </h2>
+
+                <p>
+                    UniManage AI connects information from
+                    multiple modules to provide useful
+                    insights and notifications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 UniManage AI</p>
+
+    <p>
+        AI-Based Unified Digital Management System
+    </p>
+
+</footer>
+
+
+<script>
+
+function logout() {
+
+    localStorage.removeItem("unimanageLoggedIn");
+
+    window.location.href = "dashboard.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>UniManage AI - Wellness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">UniManage <span>AI</span></div>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="health.html">Health</a>
+        <a href="health.html">Profile</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="alerts.html">Alerts</a>
+    </nav>
+    <div class="profile">
+        <div class="profile-avatar">K</div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- WELCOME -->
+    <section class="dashboard-welcome">
+        <div>
+            <p class="small-label" style="color:#00d9ff; letter-spacing:2px; font-size:11px; font-weight:800;">HEALTH & WELLNESS</p>
+            <h1>Wellness Dashboard ❤️</h1>
+            <p>Monitor your health information, appointments and wellness alerts from one place.</p>
+        </div>
+        <div class="dashboard-user">
+            <div class="user-avatar">K</div>
+            <div><strong>Keerthana Y</strong><span>BCA Student</span></div>
+        </div>
+    </section>
+
+    <!-- HEALTH STATUS -->
+    <section class="section">
+        <div class="section-title">
+            <div>
+                <p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">HEALTH STATUS</p>
+                <h2>Your Wellness Overview</h2>
+                <p style="color:var(--muted)">Live information from your health management system.</p>
+            </div>
+        </div>
+        <div class="dashboard-stats">
+            <div class="stat-card"><div class="stat-icon">❤️</div><div><strong>Good</strong><span>Wellness Status</span></div></div>
+            <div class="stat-card"><div class="stat-icon">📅</div><div><strong id="appointmentCount">0</strong><span>Appointments</span></div></div>
+            <div class="stat-card"><div class="stat-icon">🔔</div><div><strong id="alertCount">0</strong><span>Health Alerts</span></div></div>
+            <div class="stat-card"><div class="stat-icon">🤖</div><div><strong>Active</strong><span>AI Wellness</span></div></div>
+        </div>
+    </section>
+
+    <!-- HEALTH PROFILE -->
+    <section class="section">
+        <div class="section-title">
+            <div>
+                <p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">HEALTH SUMMARY</p>
+                <h2>👤 My Health Profile</h2>
+                <p style="color:var(--muted)">Your latest health information.</p>
+            </div>
+        </div>
+        <div class="dashboard-stats">
+            <div class="stat-card"><div class="stat-icon">🩸</div><div><strong id="dashboardBloodGroup">Loading...</strong><span>Blood Group</span></div></div>
+            <div class="stat-card"><div class="stat-icon">📞</div><div><strong id="dashboardEmergency">Loading...</strong><span>Emergency Contact</span></div></div>
+            <div class="stat-card"><div class="stat-icon">⚠️</div><div><strong id="dashboardAllergies">Loading...</strong><span>Allergies</span></div></div>
+            <div class="stat-card"><div class="stat-icon">📝</div><div><strong id="dashboardMedicalNotes">Loading...</strong><span>Medical Notes</span></div></div>
+        </div>
+        <div style="margin-top:20px;"><a href="health.html" class="btn">👤 View / Update Profile →</a></div>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="section">
+        <div class="section-title"><div><p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">HEALTH MANAGEMENT</p><h2>Quick Actions</h2><p style="color:var(--muted)">Access your health services quickly.</p></div></div>
+        <div class="module-grid">
+            <a href="health.html" class="quick-card module-link"><div class="quick-icon">👤</div><h3>Health Profile</h3><p>View your blood group, emergency contact, allergies and medical information.</p><span class="module-arrow">View Profile →</span></a>
+            <a href="appointments.html" class="quick-card module-link"><div class="quick-icon">📅</div><h3>Appointments</h3><p>Book and manage your health appointments.</p><span class="module-arrow">Manage Appointments →</span></a>
+            <a href="alerts.html" class="quick-card module-link"><div class="quick-icon">🔔</div><h3>Health Alerts</h3><p>View your latest health notifications and reminders.</p><span class="module-arrow">View Alerts →</span></a>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section class="section">
+        <div class="section-title"><div><p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">APPOINTMENTS</p><h2>📅 Upcoming Appointment</h2><p style="color:var(--muted)">Your latest appointment information.</p></div></div>
+        <div class="ai-card"><div class="ai-icon">📅</div><div><h2 id="appointmentDoctor">Loading...</h2><p id="appointmentDetails">Loading appointment details...</p><div style="margin-top:18px;"><a href="appointments.html" class="btn">Book Appointment →</a></div></div></div>
+    </section>
+
+    <!-- ALERTS -->
+    <section class="section">
+        <div class="section-title"><div><p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">NOTIFICATIONS</p><h2>🔔 Recent Health Alerts</h2><p style="color:var(--muted)">Latest notifications from your health system.</p></div></div>
+        <div id="recentAlerts" class="alert-list"><div class="alert-card"><div class="alert-icon">🔄</div><div class="alert-content"><h3>Loading Alerts...</h3><p>Please wait...</p></div></div></div>
+        <div style="margin-top:20px;"><a href="alerts.html" class="btn">View All Alerts →</a></div>
+    </section>
+
+    <!-- AI INSIGHT -->
+    <section class="section">
+        <div class="ai-card"><div class="ai-icon">🤖</div><div><p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">AI WELLNESS ASSISTANT</p><h2>AI Wellness Insight</h2><p id="aiInsight">🤖 Analyzing your health information...</p><div id="aiDetails" style="margin-top:15px;"><p>🔄 Checking health profile...</p><p>🔄 Checking appointments...</p><p>🔄 Checking health alerts...</p></div></div></div>
+    </section>
+
+    <!-- WELLNESS TIPS -->
+    <section class="section">
+        <div class="section-title"><div><p class="small-label" style="color:#00d9ff; font-size:11px; font-weight:800;">DAILY WELLNESS</p><h2>🌱 Wellness Tips</h2></div></div>
+        <div class="module-grid">
+            <div class="quick-card"><div class="quick-icon">💧</div><h3>Stay Hydrated</h3><p>Maintain a healthy daily hydration routine.</p></div>
+            <div class="quick-card"><div class="quick-icon">😴</div><h3>Healthy Sleep</h3><p>Maintain a regular and comfortable sleep routine.</p></div>
+            <div class="quick-card"><div class="quick-icon">🔥</div><h3>Take Breaks</h3><p>Take regular breaks during long study sessions.</p></div>
+        </div>
+    </section>
+
+    <section class="section" style="text-align:center;"><a href="dashboard.html" class="btn">← Back to Main Dashboard</a></section>
+
+</main>
+
+<footer><p>© 2026 UniManage AI</p><p>AI-Based Health & Wellness Management</p></footer>
+
+<!-- MOBILE BOTTOM NAVIGATION -->
+<div class="mobile-bottom-nav">
+    <a href="dashboard.html"><span>🏠</span><small>Home</small></a>
+    <a href="health.html"><span>❤️</span><small>Health</small></a>
+    <a href="wellness.html" class="active"><span>📊</span><small>Wellness</small></a>
+    <a href="appointments.html"><span>📅</span><small>Appointments</small></a>
+    <a href="alerts.html"><span>🔔</span><small>Alerts</small></a>
+</div>
+
+<script src="wellness.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>UniManage AI - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="login-page">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar login-navbar">
+
+        <div class="logo">
+            UniManage <span>AI</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= LOGIN MAIN ================= -->
+
+    <main class="login-wrapper">
+
+        <div class="login-container">
+
+
+            <!-- ================= LEFT SIDE ================= -->
+
+            <div class="login-info">
+
+                <div class="graduation-icon">
+                    🎓
+                </div>
+
+                <p class="login-label">
+                    UNIMANAGE AI
+                </p>
+
+                <h1>
+                    Welcome<br>
+                    <span>Back</span>
+                </h1>
+
+                <p class="login-description">
+                    Login to access your unified
+                    management dashboard.
+                </p>
+
+
+                <div class="login-features">
+
+                    <div>
+                        <span>✓</span>
+                        5 Smart Modules
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        AI-Powered Insights
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Secure Management
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LOGIN CARD ================= -->
+
+            <div class="login-card">
+
+
+                <div class="login-card-header">
+
+                    <div class="login-logo">
+                        🎓
+                    </div>
+
+                    <h2>
+                        Login
+                    </h2>
+
+                    <p>
+                        Enter your details to continue
+                    </p>
+
+                </div>
+
+
+                <!-- ================= LOGIN FORM ================= -->
+
+                <form id="loginForm">
+
+
+                    <!-- USERNAME -->
+
+                    <div class="input-group">
+
+                        <label for="username">
+                            Email or Username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Enter username"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="showPassword"
+                                aria-label="Show password">
+
+                                👁
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORGOT PASSWORD -->
+
+                    <div class="forgot-row">
+
+                        <a href="#" onclick="return false;">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="login-btn">
+
+                        Login
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- LOGIN MESSAGE -->
+
+                    <p
+                        id="loginMessage"
+                        class="login-message">
+                    </p>
+
+
+                </form>
+
+
+                <!-- ================= DEMO LOGIN ================= -->
+
+                <div class="demo-login">
+
+                    <p>
+                        Demo Login
+                    </p>
+
+                    <small>
+
+                        Username:
+                        <b>admin</b>
+
+                        &nbsp; | &nbsp;
+
+                        Password:
+                        <b>1234</b>
+
+                    </small>
+
+                </div>
+
+
+                <!-- ================= BACK HOME ================= -->
+
+                <a
+                    href="home.html"
+                    class="back-home">
+
+                    ← Back to Home
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="login-footer">
+
+        <strong>
+            © 2026 UniManage AI
+        </strong>
+
+        <p>
+            AI-Based Unified Digital Management System
+        </p>
+
+    </footer>
+
+
+    <!-- ================= LOGIN JAVASCRIPT ================= -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

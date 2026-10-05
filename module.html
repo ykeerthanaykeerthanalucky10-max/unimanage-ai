@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniManage AI - Module</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        UniManage <span>AI</span>
+    </div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="home.html">Home</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="small-label">
+                UNIMANAGE AI MODULE
+            </p>
+
+            <h1 id="moduleTitle">
+                Module
+            </h1>
+
+            <p id="moduleDescription">
+                Module information
+            </p>
+
+        </div>
+
+        <a href="dashboard.html" class="btn">
+            ← Dashboard
+        </a>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="ai-card">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <p class="small-label">
+                    MODULE STATUS
+                </p>
+
+                <h2>
+                    Ready
+                </h2>
+
+                <p id="moduleText">
+                    This module is ready to be connected
+                    with its backend and frontend.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="module-grid">
+
+            <div class="quick-card">
+
+                <div class="quick-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Module Dashboard
+                </h3>
+
+                <p>
+                    Manage and view module information
+                    from one place.
+                </p>
+
+            </div>
+
+
+            <div class="quick-card">
+
+                <div class="quick-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Insights
+                </h3>
+
+                <p>
+                    Intelligent insights and useful
+                    recommendations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 UniManage AI</p>
+
+    <p>
+        AI-Based Unified Digital Management System
+    </p>
+
+</footer>
+
+
+<script>
+
+const params =
+    new URLSearchParams(window.location.search);
+
+const module =
+    params.get("module");
+
+
+const moduleData = {
+
+    student: {
+
+        title: "👨‍🎓 Smart Student Intelligence",
+
+        description:
+        "Student profile, attendance, marks and AI academic insights.",
+
+        text:
+        "Manage student information, attendance, marks and AI-based academic insights."
+    },
+
+
+    campus: {
+
+        title: "🏫 Smart Campus & Facility",
+
+        description:
+        "Rooms, equipment, maintenance and facility availability.",
+
+        text:
+        "Manage campus rooms, equipment, maintenance requests and facility availability."
+    },
+
+
+    library: {
+
+        title: "📚 AI Library & Learning",
+
+        description:
+        "Books, issue/return and AI learning recommendations.",
+
+        text:
+        "Manage books, issue and return records and AI-powered learning recommendations."
+    },
+
+
+    ai: {
+
+        title: "🤖 AI Alert & Decision Dashboard",
+
+        description:
+        "Notifications, analytics and AI-powered insights.",
+
+        text:
+        "View notifications, analytics and intelligent AI-based decision insights."
+    }
+
+};
+
+
+if (moduleData[module]) {
+
+    document.getElementById("moduleTitle").textContent =
+        moduleData[module].title;
+
+    document.getElementById("moduleDescription").textContent =
+        moduleData[module].description;
+
+    document.getElementById("moduleText").textContent =
+        moduleData[module].text;
+
+}
+
+</script>
+
+</body>
+
+</html>
