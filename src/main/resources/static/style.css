@@ -1,0 +1,496 @@
+/* ================================
+   UNIMANAGE AI - UNIQUE UI
+   Glassmorphism + App Dashboard
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6c5ce7;
+    --secondary: #00cec9;
+    --dark: #101426;
+    --dark-card: rgba(255, 255, 255, 0.08);
+    --white: #ffffff;
+    --muted: #aab0c5;
+    --success: #00d084;
+    --warning: #ffb020;
+    --danger: #ff5c75;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    color: var(--white);
+    background:
+        radial-gradient(circle at 10% 20%, #302b63 0, transparent 35%),
+        radial-gradient(circle at 90% 10%, #065f68 0, transparent 30%),
+        linear-gradient(135deg, #090b18, #151936 55%, #071c27);
+    overflow-x: hidden;
+}
+
+/* Background Glow */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.25;
+    z-index: -1;
+}
+
+body::before {
+    background: #7c4dff;
+    top: 5%;
+    left: -80px;
+}
+
+body::after {
+    background: #00e5ff;
+    bottom: 5%;
+    right: -80px;
+}
+
+/* Main App */
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    padding: 25px 18px;
+    background: rgba(12, 15, 35, 0.75);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    padding: 0 10px;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin: 8px 0;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 15px;
+    color: var(--muted);
+    text-decoration: none;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: white;
+    background: linear-gradient(
+        135deg,
+        rgba(108,92,231,0.8),
+        rgba(0,206,201,0.45)
+    );
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transform: translateX(4px);
+}
+
+/* Content */
+
+.content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 28px;
+}
+
+/* Header */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.welcome p {
+    color: var(--muted);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    box-shadow: 0 5px 20px rgba(0,206,201,0.25);
+}
+
+/* Glass Card */
+
+.card {
+    background: var(--dark-card);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 22px;
+    padding: 22px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.22);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,255,255,0.22);
+}
+
+/* Stats */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    right: -25px;
+    bottom: -25px;
+}
+
+.stat-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.stat-title {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Main Grid */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-title h2 {
+    font-size: 19px;
+}
+
+/* Health Status */
+
+.health-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.health-box {
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.health-box small {
+    color: var(--muted);
+}
+
+.health-box strong {
+    display: block;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.good {
+    color: var(--success);
+}
+
+.warning {
+    color: var(--warning);
+}
+
+.danger {
+    color: var(--danger);
+}
+
+/* Progress */
+
+.progress {
+    height: 9px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 78%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+/* Appointment */
+
+.appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+}
+
+.doctor {
+    font-weight: 600;
+}
+
+.date {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    background: rgba(0,208,132,0.15);
+    color: var(--success);
+}
+
+/* Alert */
+
+.alert {
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    background: rgba(255,92,117,0.09);
+    border-left: 4px solid var(--danger);
+}
+
+.alert strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.alert p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 11px 18px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,206,201,0.2);
+}
+
+/* Form */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    outline: none;
+    color: white;
+    background: rgba(255,255,255,0.06);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(0,206,201,0.08);
+}
+
+/* Bottom Navigation */
+
+.bottom-nav {
+    display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 18px;
+        padding-bottom: 90px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .health-status {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        height: 65px;
+        z-index: 20;
+        border-radius: 20px;
+        background: rgba(15,18,40,0.9);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.12);
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+    }
+
+    .bottom-nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .bottom-nav a.active {
+        color: var(--secondary);
+    }
+
+    .bottom-nav span {
+        display: block;
+        font-size: 21px;
+        margin-bottom: 3px;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .card {
+        padding: 17px;
+        border-radius: 18px;
+    }
+
+    .stat-number {
+        font-size: 23px;
+    }
+
+    .profile-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .topbar {
+        gap: 10px;
+    }
+}

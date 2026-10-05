@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UniManage AI - Health & Wellness</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            UniManage <span>AI</span>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="#" class="active">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#profile">
+                    ❤️ Health Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#appointments">
+                    📅 Appointments
+                </a>
+            </li>
+
+            <li>
+                <a href="#alerts">
+                    🔔 Health Alerts
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    🤖 AI Insights
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    ⚙️ Settings
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <h1>Health & Wellness</h1>
+
+                <p>
+                    Smart health management powered by UniManage AI
+                </p>
+
+            </div>
+
+            <div class="profile">
+
+                <div>
+                    <strong>Keerthana</strong>
+                    <small style="display:block;color:#aab0c5;">
+                        BCA Student
+                    </small>
+                </div>
+
+                <div class="profile-avatar">
+                    K
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- STAT CARDS -->
+        <section class="stats">
+
+            <div class="card stat-card">
+
+                <div class="stat-icon">
+                    ❤️
+                </div>
+
+                <div class="stat-number">
+                    Healthy
+                </div>
+
+                <div class="stat-title">
+                    Overall Status
+                </div>
+
+            </div>
+
+
+            <div class="card stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div class="stat-number">
+                    02
+                </div>
+
+                <div class="stat-title">
+                    Upcoming Appointments
+                </div>
+
+            </div>
+
+
+            <div class="card stat-card">
+
+                <div class="stat-icon">
+                    🔔
+                </div>
+
+                <div class="stat-number">
+                    03
+                </div>
+
+                <div class="stat-title">
+                    Active Alerts
+                </div>
+
+            </div>
+
+
+            <div class="card stat-card">
+
+                <div class="stat-icon">
+                    🤖
+                </div>
+
+                <div class="stat-number">
+                    87%
+                </div>
+
+                <div class="stat-title">
+                    AI Wellness Score
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD GRID -->
+        <section class="dashboard-grid">
+
+
+            <!-- LEFT -->
+            <div>
+
+                <!-- HEALTH PROFILE -->
+                <div class="card" id="profile">
+
+                    <div class="card-title">
+
+                        <h2>
+                            ❤️ Health Profile
+                        </h2>
+
+                        <button class="btn">
+                            Edit
+                        </button>
+
+                    </div>
+
+
+                    <div class="health-status">
+
+                        <div class="health-box">
+
+                            <small>
+                                Blood Group
+                            </small>
+
+                            <strong>
+                                O+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-box">
+
+                            <small>
+                                Emergency Contact
+                            </small>
+
+                            <strong>
+                                +91 XXXXX
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-box">
+
+                            <small>
+                                Allergy Status
+                            </small>
+
+                            <strong class="good">
+                                Clear
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div>
+
+                        <small style="color:#aab0c5;">
+                            Wellness Progress
+                        </small>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"></div>
+
+                        </div>
+
+                        <small style="color:#aab0c5;">
+                            78% wellness target completed
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <br>
+
+
+                <!-- APPOINTMENTS -->
+                <div class="card" id="appointments">
+
+                    <div class="card-title">
+
+                        <h2>
+                            📅 Upcoming Appointments
+                        </h2>
+
+                        <button class="btn">
+                            + Add
+                        </button>
+
+                    </div>
+
+
+                    <div class="appointment">
+
+                        <div>
+
+                            <div class="doctor">
+                                General Health Check
+                            </div>
+
+                            <div class="date">
+                                Dr. HealthCare • Tomorrow
+                            </div>
+
+                        </div>
+
+                        <span class="badge">
+                            Booked
+                        </span>
+
+                    </div>
+
+
+                    <div class="appointment">
+
+                        <div>
+
+                            <div class="doctor">
+                                Wellness Consultation
+                            </div>
+
+                            <div class="date">
+                                AI Wellness Team • 28 Sep
+                            </div>
+
+                        </div>
+
+                        <span class="badge">
+                            Confirmed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <br>
+
+
+                <!-- AI INSIGHT -->
+                <div class="card">
+
+                    <div class="card-title">
+
+                        <h2>
+                            🤖 AI Wellness Insight
+                        </h2>
+
+                        <span class="badge">
+                            AI
+                        </span>
+
+                    </div>
+
+                    <p style="color:#aab0c5;line-height:1.7;">
+
+                        Your wellness profile is currently stable.
+                        UniManage AI continuously monitors your
+                        registered health information and generates
+                        useful wellness reminders.
+
+                    </p>
+
+                    <br>
+
+                    <button class="btn">
+                        View AI Insights
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div>
+
+                <!-- ALERTS -->
+                <div class="card" id="alerts">
+
+                    <div class="card-title">
+
+                        <h2>
+                            🔔 Health Alerts
+                        </h2>
+
+                    </div>
+
+
+                    <div class="alert">
+
+                        <strong>
+                            Appointment Reminder
+                        </strong>
+
+                        <p>
+                            Your health appointment is scheduled
+                            for tomorrow.
+                        </p>
+
+                    </div>
+
+
+                    <div class="alert">
+
+                        <strong>
+                            Wellness Reminder
+                        </strong>
+
+                        <p>
+                            Remember to maintain your daily
+                            wellness routine.
+                        </p>
+
+                    </div>
+
+
+                    <div class="alert">
+
+                        <strong>
+                            Profile Update
+                        </strong>
+
+                        <p>
+                            Review your emergency contact details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <br>
+
+
+                <!-- QUICK ACTIONS -->
+                <div class="card">
+
+                    <div class="card-title">
+
+                        <h2>
+                            ⚡ Quick Actions
+                        </h2>
+
+                    </div>
+
+
+                    <button class="btn"
+                            style="width:100%;margin-bottom:10px;">
+
+                        ❤️ Update Health Profile
+
+                    </button>
+
+
+                    <button class="btn"
+                            style="width:100%;margin-bottom:10px;">
+
+                        📅 Book Appointment
+
+                    </button>
+
+
+                    <button class="btn"
+                            style="width:100%;">
+
+                        🔔 View Alerts
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- MOBILE BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="#" class="active">
+        <span>🏠</span>
+        Home
+    </a>
+
+    <a href="#profile">
+        <span>❤️</span>
+        Health
+    </a>
+
+    <a href="#appointments">
+        <span>📅</span>
+        Appointments
+    </a>
+
+    <a href="#alerts">
+        <span>🔔</span>
+        Alerts
+    </a>
+
+    <a href="#">
+        <span>⚙️</span>
+        Settings
+    </a>
+
+</nav>
+
+
+</body>
+</html>
