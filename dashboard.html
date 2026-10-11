@@ -20,7 +20,7 @@
 
     <nav>
         <a href="dashboard.html" class="active">Dashboard</a>
-        <a href="index.html">Health</a>
+        <a href="health.html">Health</a>
         <a href="home.html">Home</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
@@ -34,22 +34,15 @@
     <section class="dashboard-welcome">
 
         <div>
+            <p class="small-label">UNIMANAGE AI DASHBOARD</p>
 
-            <p class="small-label">
-                UNIMANAGE AI DASHBOARD
-            </p>
-
-            <h1>
-                Welcome Back, Keerthana! 👋
-            </h1>
+            <h1>Welcome Back, Keerthana! 👋</h1>
 
             <p>
                 Manage your academic, campus, health and
                 learning activities from one unified platform.
             </p>
-
         </div>
-
 
         <div class="dashboard-user">
 
@@ -72,37 +65,30 @@
 
         <div class="stat-card">
             <div class="stat-icon">👨‍🎓</div>
-
             <div>
                 <strong>Student</strong>
                 <span>Intelligence</span>
             </div>
         </div>
 
-
         <div class="stat-card">
             <div class="stat-icon">🏫</div>
-
             <div>
                 <strong>Campus</strong>
                 <span>Facilities</span>
             </div>
         </div>
 
-
         <div class="stat-card">
             <div class="stat-icon">❤️</div>
-
             <div>
                 <strong>Health</strong>
                 <span>Wellness</span>
             </div>
         </div>
 
-
         <div class="stat-card">
             <div class="stat-icon">📚</div>
-
             <div>
                 <strong>Library</strong>
                 <span>Learning</span>
@@ -137,7 +123,7 @@
 
             <!-- MODULE 1 -->
             <a href="https://cdharshini011-droid.github.io/Smart-Student-Intelligence/"
-   class="quick-card module-link">
+               class="quick-card module-link">
 
                 <div class="quick-icon">
                     👨‍🎓
@@ -159,54 +145,9 @@
             </a>
 
 
-            <!-- MODULE 2 -->
-            https://godhavari860.github.io/AI-library/
-
-                <div class="quick-icon">
-                    🏫
-                </div>
-
-                <h3>
-                    Smart Campus & Facility
-                </h3>
-
-                <p>
-                    Rooms, equipment, maintenance
-                    and facility availability.
-                </p>
-
-                <span class="module-arrow">
-                    Open Module →
-                </span>
-
-            </a>
-
-
-            <!-- MODULE 3 -->
-            href="https://ykeerthanaykeerthanalucky10-max.github.io/unimanage-ai/health.html"
-
-                <div class="quick-icon">
-                    ❤️
-                </div>
-
-                <h3>
-                    Health & Wellness
-                </h3>
-
-                <p>
-                    Health profile, appointments
-                    and wellness alerts.
-                </p>
-
-                <span class="module-arrow">
-                    Open Module →
-                </span>
-
-            </a>
-
-
-            <!-- MODULE 4 -->
-            https://keerthiga888.github.io/smart-campus/
+            <!-- MODULE 2 - AI LIBRARY -->
+            <a href="https://godhavari860.github.io/AI-library/"
+               class="quick-card module-link">
 
                 <div class="quick-icon">
                     📚
@@ -228,8 +169,57 @@
             </a>
 
 
-            <!-- MODULE 5 -->
-            https://rdevisri522-boop.github.io/Al-Alert-Dashboard/
+            <!-- MODULE 3 - HEALTH -->
+            <a href="https://ykeerthanaykeerthanalucky10-max.github.io/unimanage-ai/health.html"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Health & Wellness
+                </h3>
+
+                <p>
+                    Health profile, appointments
+                    and wellness alerts.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 4 - SMART CAMPUS -->
+            <a href="https://keerthiga888.github.io/smart-campus/"
+               class="quick-card module-link">
+
+                <div class="quick-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    Smart Campus & Facility
+                </h3>
+
+                <p>
+                    Rooms, equipment, maintenance
+                    and facility availability.
+                </p>
+
+                <span class="module-arrow">
+                    Open Module →
+                </span>
+
+            </a>
+
+
+            <!-- MODULE 5 - AI ALERT DASHBOARD -->
+            <a href="https://rdevisri522-boop.github.io/Al-Alert-Dashboard/"
+               class="quick-card module-link">
 
                 <div class="quick-icon">
                     🤖
@@ -307,7 +297,7 @@ function logout() {
 
     localStorage.removeItem("unimanageLoggedIn");
 
-    window.location.href = "dashboard.html";
+    window.location.href = "login.html";
 
 }
 
